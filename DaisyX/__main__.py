@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Chibai, [Zo Robot] ka nia(https://telegra.ph/file/47caadaea13d54e062d1b.jpg)
+Chibai, [Zo Robot] ka ni e.
 
 Group i enkawl na ah i zangkhai zawk theih nan a pui thei tu tur che ka ni e
 
@@ -79,14 +79,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➕ Group a add na ➕", url="t.me/mizoro_bot?startgroup=true"
+            text="➕ Add Me to Your Group ➕", url="t.me/mizoro_bot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/47caadaea13d54e062d1b.jpg)
+*Main Commands :* [🤖]
 ✪ /start: Min tihnun na.
 ✪ /help: Ka hnathawh theih i hriat theihna!
 ✪ /donate: Min siamtu hnen a lawmman i pek ve na tur.
@@ -97,7 +97,7 @@ HELP_STRINGS = f"""
 ★A hnuai a button ho hi click la,ka hnathawh theih hrang hrang ani e,mahse English vek a a hrilhfiahna ziah ania,harsatna i neih theih avang in click la👉 @rsrtginfo join rawh
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+    "" if not ALLOW_EXCL else "\nCommand zawng zawng hi / emaw ! a bultan tur ani.\n",
 )
 
 
@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Hnathawk tur in ka inpeih e\n<b>Chawlh chhung:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -689,7 +689,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
         update.effective_message.reply_text(
-            "You can also donate to the person currently running me "
+            "Itan ka tangkai ve anih chuan i phal ang zah kha lo Donate ve la😊"
             "[here]({})".format(DONATION_LINK),
             parse_mode=ParseMode.MARKDOWN,
         )
@@ -702,7 +702,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hnathawk tur in ka inpeih e")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
