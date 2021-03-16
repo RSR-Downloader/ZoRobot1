@@ -3,13 +3,13 @@
 ## Everything will be changed in the release
 
 
-# “ Hey there 👋 I'm Daisy „
+# “ Hey there 👋 I'm Zo Robot „
 ## AI based Advanced telegram Group Management Bot Suit For All Your Needs ❤️
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RSR-Downloader/zorobot)
 
-## https://daisyproject.studio
-## Avaiilable on Telegram as [@DaisyXBot](https://t.me/daisyxbot)
+## https://library-mizo.blogspot.com
+## Avaiilable on Telegram as [@mizoro_bot](https://t.me/mizoro_bot)
 
 
 
