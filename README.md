@@ -6,7 +6,7 @@
 # “ Hey there 👋 I'm Zo Robot „
 ## AI based Advanced telegram Group Management Bot Suit For All Your Needs ❤️
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RSR-Downloader/zorobot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RSR-Downloader/ZoRobot1)
 
 ## https://library-mizo.blogspot.com
 ## Avaiilable on Telegram as [@mizoro_bot](https://t.me/mizoro_bot)
